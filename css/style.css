@@ -39,7 +39,14 @@ body {
 }
 .btn {
     color: #5c434d;
+    margin: 50px;
 }
 .btn:hover {
     background-color: #5c434d;
+}
+#as-seen-on {
+    flex-direction: column;
+}
+#as-seen-on img{
+    margin: 8px;
 }
