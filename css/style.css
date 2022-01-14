@@ -50,3 +50,6 @@ body {
 #as-seen-on img{
     margin: 8px;
 }
+#bottom {
+    margin-top: -100px;
+}
