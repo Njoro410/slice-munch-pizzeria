@@ -1,8 +1,22 @@
- .navbar {
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+body {
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.navbar {
     -webkit-box-shadow: 0 8px 6px -6px #999;
     -moz-box-shadow: 0 8px 6px -6px #999;
     box-shadow: 0 8px 6px -6px #999;
     padding-right: 50px;
     padding-left: 50px;
-    background-color: aqua;
+
+}
+#slogan {
+    font-size: 2vw;
+    text-align: center;
+    font-weight: 50px;
+    margin-top: 20px;
+}
+#main {
+    margin-top: -200px;
 }
