@@ -17,6 +17,12 @@ body {
     text-align: center;
     font-weight: 50px;
     margin-top: 20px;
+    color: #5c434d;
+}
+.content {
+    font-size: 1.5vw;
+    text-align: center;
+    color: #5c434d;
 }
 #main {
     margin-top: -200px;
@@ -25,4 +31,9 @@ body {
     margin-top: 105px;
     margin-bottom: 10px;
 
+}
+#bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
