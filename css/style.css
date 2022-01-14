@@ -32,8 +32,14 @@ body {
     margin-bottom: 10px;
 
 }
-#bottom {
+.center {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.btn {
+    color: #5c434d;
+}
+.btn:hover {
+    background-color: #5c434d;
 }
