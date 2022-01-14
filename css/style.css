@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
 body {
     font-family: 'Mochiy Pop P One', sans-serif;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -19,4 +20,9 @@ body {
 }
 #main {
     margin-top: -200px;
+}
+#r-pizza {
+    margin-top: 105px;
+    margin-bottom: 10px;
+
 }
