@@ -17,18 +17,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5%;
+    border-radius: 2.5%;
+    
     }
 .card:hover {
     cursor: pointer;
     box-shadow: 0 8px 16px 0 #5c434d;
 }
 .card-title {
-    font-size: 1.5vw;
+    margin-top: -25px;
+    font-size: .9vw;
 }
 .card-text {
-    font-size: .8vw;
+    font-size: .7vw;
 }
 
-
-    
+.col-sm-4 {
+    box-shadow: 0 0px 10px 0 #5c434d;
+      
+}
+.line {
+    border-bottom:5px solid #5c434d;
+}
