@@ -16,9 +16,7 @@
   </head>
 
   <body>
-    <div class="container-fluid">
-
-
+    
       <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -98,13 +96,15 @@
           <div class="row">
             <div class="col-sm-12">
                 <form>
-                  <label for="name"> Name
-                    <input class="" id="name" type="text" placeholder="...">
+                  <label for="name"> Name:
+                    <input class="form-control" id="name" type="text" placeholder="...">
                   </label>
                   <p>Delivery or Pick-up</p>
-                  <button type="submit" class="btn btn-primary">Delivery</button>
+                  <button type="button" class="btn btn-primary" id="delivery">Delivery</button>
                   <button type="submit" class="btn btn-primary">Pick-up</button> <br>
-                  <span id="deli or pick"></span>
+                  <div id="deli">
+                    
+                  </div>
                 </form>
             </div>
           </div>
@@ -112,7 +112,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary" id="proceed" onClick="pro()" >Proceed</button>
       </div>
     </div>
   </div>
@@ -128,6 +128,6 @@
       <script src="js/script.js"></script>
 
 
-    </div>
+    
   </body>
 </html>
