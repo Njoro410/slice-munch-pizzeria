@@ -95,6 +95,14 @@ $(document).ready(function() {
         ($("#proceed").click(function() {
             $('#bill').append(total + '/=');
           }));
+          
+
+        ($("#delivery").one('click',function() {
+            total = total + 200;
+            $('#new-bill').append('<p class="content">Your New Bill is:</p>' + total + '/=');
+          }));
+        
+        
         
          $('#siz').append(newPizzaSize.pizzaSize());
          $('#crus').append(newPizzaCrust.pizzaCrust());
@@ -112,7 +120,7 @@ $(document).ready(function() {
     
 
     });
-    ($("#delivery").click(function() {
+    ($("#delivery").one('click',function() {
         $("#deli").append('A flat fee of 200/= will be applied'+'<div class="name">' +
                                  '<div class="form-group">' +
                                    '<label for="name">Name</label>' +
@@ -127,6 +135,7 @@ $(document).ready(function() {
                                    '<input type="tel" class="form-control">' +
                                  '</div>' +
                                '</div>');
+                               
     }))
 
     
