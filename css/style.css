@@ -20,12 +20,12 @@ body {
     text-align: center;
     font-weight: 50px;
     margin-top: 20px;
-    color: #5c434d;
+    color: #000;
 }
 .content {
     font-size: 1.5vw;
     text-align: center;
-    color: #5c434d;
+    color: #000;
 }
 #main {
     margin-top: -200px;
@@ -42,6 +42,7 @@ body {
     justify-content: center;
 }
 .btn:hover {
+    color: #fff;
     background-color: #5c434d;
 }
 #as-seen-on {
@@ -56,4 +57,13 @@ body {
 }
 #deliver {
     margin-top: -250px;
+}
+#specs .btn-close{
+    display: none;
+}
+#checkout .btn-close {
+    display: none;
+}
+#confirm .btn-close {
+    display: none;
 }
