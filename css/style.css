@@ -2,6 +2,7 @@
 body {
     font-family: 'Mochiy Pop P One', sans-serif;
     overflow-x: hidden;
+    background-image: url(../assets/images/subtle-prism.svg);
 }
 
 .navbar {
@@ -12,6 +13,8 @@ body {
     padding-left: 50px;
 
 }
+
+
 #slogan {
     font-size: 2vw;
     text-align: center;
@@ -26,6 +29,7 @@ body {
 }
 #main {
     margin-top: -200px;
+    
 }
 #r-pizza {
     margin-top: 105px;
@@ -37,19 +41,19 @@ body {
     align-items: center;
     justify-content: center;
 }
-#pick-up, #delivered {
-    color: #000;
-    margin: 50px;
-}
 .btn:hover {
     background-color: #5c434d;
 }
 #as-seen-on {
-    flex-direction: column;
+    margin-top: -25px;
+    flex-direction: row;
 }
 #as-seen-on img{
     margin: 8px;
 }
 #bottom {
     margin-top: -100px;
+}
+#deliver {
+    margin-top: -250px;
 }
