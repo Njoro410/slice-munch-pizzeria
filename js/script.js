@@ -20,10 +20,22 @@ Pizzatopping.prototype.pizzaTopping = function () {
     return this.pTop + ',';
 }
 
+$(window).on('load', function() { 
+    $('#status').fadeOut(); 
+    $('#preloader').delay(350).fadeOut('slow'); 
+    $('body').delay(350).css({'overflow':'visible'});
+  })
+
 
 
 $(document).ready(function() {
 
+    $('#continue').click(function() {
+        window.location.href = "/public/home.html";
+    });
+    $('#understood').click(function() {
+        location.reload();
+    });
     $('#close').click(function() {
         location.reload();
     });
@@ -118,6 +130,7 @@ $(document).ready(function() {
 
 
 
+
     }
     
     calculateTotal(inputtedSize,inputtedCrust,sel);
@@ -129,21 +142,29 @@ $(document).ready(function() {
     });
     ($("#delivery").one('click',function() {
         $("#deli").append('A flat fee of 200/= will be applied'+'<div class="name">' +
+                                
                                  '<div class="form-group">' +
                                    '<label for="name">Name</label>' +
-                                   '<input type="text" class="form-control">' +
+                                   '<input type="text" class="form-control" id= "name">' +
                                  '</div>' +
                                  '<div class="form-group">' +
                                    '<label for="address">Address</label>' +
-                                   '<input type="text" class="form-control">' +
+                                   '<input type="text" class="form-control" id= "address">' +
                                  '</div>' +
                                  '<div class="form-group">' +
                                    '<label for="number">Number</label>' +
-                                   '<input type="tel" class="form-control">' +
+                                   '<input type="tel" class="form-control" id= "num">' +
                                  '</div>' +
                                '</div>');
                                
-    }))
+    }));
+
+
+
+
+
+    
+
 
     
 
@@ -151,18 +172,23 @@ $(document).ready(function() {
     if($("#hawaiian").click(function() {
         $("#specs").modal('show');
       })) {
-          $('#name').append('Hawaiian')
-      } 
+        $('#name').append('Hawaiian');
+      }
+      
+
       if($("#boerewors").click(function() {
         $("#specs").modal('show');
       })) {
-          //append pizza name
+        
       }
+      
+
       if($("#bbqsteak").click(function() {
         $("#specs").modal('show');
       })) {
-          //append pizza name
+        
       }
+
       if($("#regina").click(function() {
         $("#specs").modal('show');
       })) {
