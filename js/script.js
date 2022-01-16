@@ -24,6 +24,13 @@ Pizzatopping.prototype.pizzaTopping = function () {
 
 $(document).ready(function() {
 
+    $('#close').click(function() {
+        location.reload();
+    });
+    $('#cllose').click(function() {
+        location.reload();
+    });
+
     $("form#accessories").submit(function(event) {
         event.preventDefault();
 
