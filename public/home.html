@@ -42,7 +42,7 @@
         </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-8" id="pizza-menu" >
+            <div class="col-md-12" id="pizza-menu" >
                 <div class="row row-cols-1 row-cols-md-3 g-4">
 
                     <div class="col">
@@ -66,7 +66,7 @@
                             <p class="card-text">Beef mince, fresh tomatos & onions</p>
                           </div>
                           <div class="card-footer">
-                            <a href="#" class="btn btn-outline-primary">Add</a>
+                            <button type="button" id="boerewors" class="btn btn btn-outline-primary">Add</button>
                           </div>
                         </div>
                       </div>
@@ -79,7 +79,7 @@
                             <p class="card-text">Marinated bbq steak</p>
                           </div>
                           <div class="card-footer">
-                            <a href="#" class="btn btn-outline-primary">Add</a>
+                            <button type="button" id="bbqsteak" class="btn btn btn-outline-primary">Add</button>
                           </div>
                         </div>
                       </div>
@@ -92,7 +92,7 @@
                             <p class="card-text">Sandwich beef, mushroom</p>
                           </div>
                           <div class="card-footer">
-                            <a href="#" class="btn btn-outline-primary">Add</a>
+                            <button type="button" id="regina" class="btn btn btn-outline-primary">Add</button>
                           </div>
                         </div>
                       </div>
@@ -105,7 +105,7 @@
                             <p class="card-text">Spicy peri-peri chicken</p>
                           </div>
                           <div class="card-footer">
-                            <a href="#" class="btn btn-outline-primary">Add</a>
+                            <button type="button" id="ppchicken" class="btn btn btn-outline-primary">Add</button>
                         </div>
                         </div>
                       </div>
@@ -118,7 +118,7 @@
                             <p class="card-text">Beef pepperoni, bbq steak, macon</p>
                           </div>
                           <div class="card-footer">
-                            <a href="#" class="btn btn-outline-primary">Add</a>
+                            <button type="button" id="meat_deluxe" class="btn btn btn-outline-primary">Add</button>
                         </div>
                         </div>
                       </div>
@@ -131,7 +131,7 @@
                             <p class="card-text">Fresh red & green peppers & olives</p>
                           </div>
                           <div class="card-footer">
-                            <a href="#" class="btn btn-outline-primary">Add</a>
+                            <button type="button" id="veg" class="btn btn btn-outline-primary">Add</button>
                           </div>
                         </div>
                       </div>
@@ -144,7 +144,7 @@
                             <p class="card-text">Succulent bbq chicken, pineapple</p>
                           </div>
                           <div class="card-footer">
-                            <a href="#" class="btn btn-outline-primary">Add</a>
+                            <button type="button" id="c_hawaiian" class="btn btn btn-outline-primary">Add</button>
                           </div>
                         </div>
                       </div>
@@ -156,9 +156,10 @@
                             <h5 class="card-title center">Spicy Boerewors</h5>
                             <p class="card-text">Spicy beef mince,tomatos & onions</p>
                           </div>
-                          <div class="card-footer">
-                            <a href="#" class="btn btn-outline-primary">Add</a>
+                          <div class="card-footer sticky">
+                            <button type="button" id="spicy_boerewors" class="btn btn btn-outline-primary">Add</button>
                           </div>
+                          
                         </div>
                       </div>
 
@@ -166,9 +167,7 @@
             </div>
                     
 
-            <div class="col-sm-4" id="pizza-menu">
-
-            </div>
+           
         </div>
         <hr class="line">
         <div class="row">
@@ -179,7 +178,7 @@
         
     </div>
 <!--modal-->
-    <div class="modal" id="accessories" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal" id="specs" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header">
@@ -190,49 +189,49 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-sm-12">
-                    <form id="accessories">
+        <form id="accessories">
                       <p>SIZE</p>
                       <hr class="line">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="size" id="large">
-                        <label class="form-check-label" for="flexRadioDefault1">
+                      <div id="size">
+                        <input class="form-check-input" type="radio" name="size" value="large">
+                        <label class="form-check-label" for="large">
                           Large
                         </label>
                       </div>
 
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="size" id="medium" >
-                        <label class="form-check-label" for="flexRadioDefault2">
+                      <div id="size">
+                        <input class="form-check-input" type="radio" name="size" value="medium" >
+                        <label class="form-check-label" for="medium">
                           Medium
                         </label>
                       </div>
 
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="size" id="small" >
-                        <label class="form-check-label" for="flexRadioDefault2">
+                      <div id="size">
+                        <input class="form-check-input" type="radio" name="size" value="small" >
+                        <label class="form-check-label" for="small">
                           Small
                         </label>
                       </div>
 
                       <hr class="line">
                       <p>CRUST</p>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="crust" id="crispy" >
-                        <label class="form-check-label" for="flexRadioDefault2">
+                      <div id="crust">
+                        <input class="form-check-input" type="radio" name="crust" value="crispy" >
+                        <label class="form-check-label" for="crispy">
                           Crispy
                         </label>
                       </div>
                       
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="crust" id="stuffed" >
-                        <label class="form-check-label" for="flexRadioDefault2">
+                      <div div id="crust">
+                        <input class="form-check-input" type="radio" name="crust" value="stuffed" >
+                        <label class="form-check-label" for="stuffed">
                           Stuffed
                         </label>
                       </div>
 
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="crust" id="gluten-free" >
-                        <label class="form-check-label" for="flexRadioDefault2">
+                      <div div id="crust">
+                        <input class="form-check-input" type="radio" name="crust" value="gluten-free" >
+                        <label class="form-check-label" for="gluten-free">
                           Gluten-free
                         </label>
                       </div>
@@ -240,15 +239,15 @@
 
 
                       <p>TOPPINGS</p>
-                      <div class="form-check">
+                      <div id="toppings">
                         <input class="form-check-input" type="checkbox" value="onions" id="flexCheckDefault">
                         <label class="form-check-label" for="flexCheckDefault">
                           Onions
                         </label>
                       </div>
 
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="pepper" id="flexCheckChecked">
+                      <div id="toppings">
+                        <input  class="form-check-input" type="checkbox" value="pepper" id="flexCheckChecked">
                         <label class="form-check-label" for="flexCheckChecked">
                           Pepper
                         </label>
@@ -294,15 +293,46 @@
                         <label class="form-check-label" for="flexCheckChecked">
                           Mushroom
                         </label>
-                    </form>
-                </div>
+                      </div>
               </div>
             </div>
           </div>
-    
         </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary" id="add" data-bs-dismiss="modal" >Add</button>
+        </div>
+      </form>
       </div>
     </div>
+    </div>
+
+     <!-- Modal checkout -->
+<div class="modal" id="checkout" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Checkout</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="details">
+                    
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary" id="proceed" >Confirm</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5c434d" fill-opacity="1" d="M0,128L1440,32L1440,320L0,320Z"></path></svg>
       
