@@ -6,8 +6,15 @@
 }
 
 #pizza-menu {
+
     margin-top: -100px;
 
+}
+#des {
+    background-image: url(../assets/images/pizza5.png);
+    color: #000;
+    margin-top: -100px;
+    box-shadow: 0 8px 16px 0 #5c434d;
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -34,4 +41,8 @@
 
 .line {
     border-bottom:5px solid #5c434d;
+}
+.description {
+    text-align:right;
+    font-size: 1.36vw;
 }
