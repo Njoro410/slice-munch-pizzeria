@@ -87,14 +87,22 @@ $(document).ready(function() {
             total = total + 200;
         }
 
+        ($("#addPizza").click(function() {
+            total = total*2;
+            $('#total').text('Total:'+total + '/=');
+          }))
         
          $('#siz').append(newPizzaSize.pizzaSize());
          $('#crus').append(newPizzaCrust.pizzaCrust());
          $('#toppin').append(newPizzaTopping.pizzaTopping());
          $('#total').append(total + '/=')
+
+
     }
     
     calculateTotal(inputtedSize,inputtedCrust,sel);
+
+
     
     
 
