@@ -42,7 +42,7 @@
         </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-12" id="pizza-menu" >
+            <div class="col-md-8" id="pizza-menu" >
                 <div class="row row-cols-1 row-cols-md-3 g-4">
 
                     <div class="col">
@@ -165,6 +165,9 @@
 
                 </div>
             </div>
+            <div class="col-sm-4" id="pizza-menu">
+              <img src="../assets/images/pinpizza3.jpg" alt="">
+            </div>
                     
 
            
@@ -195,21 +198,21 @@
                       <div id="size">
                         <input class="form-check-input" type="radio" name="size" value="large">
                         <label class="form-check-label" for="large">
-                          Large
+                          Large  -------------------------- 1200/=
                         </label>
                       </div>
 
                       <div id="size">
                         <input class="form-check-input" type="radio" name="size" value="medium" >
                         <label class="form-check-label" for="medium">
-                          Medium
+                          Medium  -------------------------- 900/=  
                         </label>
                       </div>
 
                       <div id="size">
                         <input class="form-check-input" type="radio" name="size" value="small" >
                         <label class="form-check-label" for="small">
-                          Small
+                          Small  -------------------------- 600/=
                         </label>
                       </div>
 
@@ -218,21 +221,21 @@
                       <div id="crust">
                         <input class="form-check-input" type="radio" name="crust" value="crispy" >
                         <label class="form-check-label" for="crispy">
-                          Crispy
+                          Crispy  -------------------------- 100/=
                         </label>
                       </div>
                       
                       <div div id="crust">
                         <input class="form-check-input" type="radio" name="crust" value="stuffed" >
                         <label class="form-check-label" for="stuffed">
-                          Stuffed
+                          Stuffed  -------------------------- 200/=
                         </label>
                       </div>
 
                       <div div id="crust">
                         <input class="form-check-input" type="radio" name="crust" value="gluten-free" >
                         <label class="form-check-label" for="gluten-free">
-                          Gluten-free
+                          Gluten-free  -------------------------- 300/=
                         </label>
                       </div>
                       <hr class="line">
@@ -242,56 +245,56 @@
                       <div id="toppings">
                         <input class="form-check-input" type="checkbox" value="onions" id="flexCheckDefault">
                         <label class="form-check-label" for="flexCheckDefault">
-                          Onions
+                          Onions  -------------------------- 50/=
                         </label>
                       </div>
 
                       <div id="toppings">
                         <input  class="form-check-input" type="checkbox" value="pepper" id="flexCheckChecked">
                         <label class="form-check-label" for="flexCheckChecked">
-                          Pepper
+                          Pepper  -------------------------- 100/=
                         </label>
                       </div>
 
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="sausage" id="flexCheckDefault">
                         <label class="form-check-label" for="flexCheckDefault">
-                          Sausage
+                          Sausage  -------------------------- 75/=
                         </label>
                       </div>
 
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="garlic" id="flexCheckChecked">
                         <label class="form-check-label" for="flexCheckChecked">
-                          Garlic
+                          Garlic  -------------------------- 55/=
                         </label>
                       </div>
 
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="cheese" id="flexCheckDefault">
                         <label class="form-check-label" for="flexCheckDefault">
-                          Extra cheese
+                          Extra cheese  -------------------------- 95/=
                         </label>
                       </div>
 
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="pineapple" id="flexCheckChecked">
                         <label class="form-check-label" for="flexCheckChecked">
-                          Pineapple
+                          Pineapple  -------------------------- 60/=
                         </label>
                       </div>
 
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="b-olives" id="flexCheckDefault">
                         <label class="form-check-label" for="flexCheckDefault">
-                          Black Olives
+                          Black Olives  -------------------------- 150/=
                         </label>
                       </div>
 
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="mushroom" id="flexCheckChecked">
                         <label class="form-check-label" for="flexCheckChecked">
-                          Mushroom
+                          Mushroom  -------------------------- 200/=
                         </label>
                       </div>
               </div>
@@ -308,11 +311,11 @@
     </div>
 
      <!-- Modal confirm -->
-<div class="modal" id="confirm" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal" id="confirm" tabindex="-1" data-bs-backdrop="static" >
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Checkout</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Confirm</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -351,18 +354,25 @@
                     <form id="getname">
                       <p>How do you want to get your pizza:</p>
                       <button type="button" class="btn btn-primary" id="delivery">Delivery</button>
-                      <button type="button" class="btn btn-primary" id="pick-up">Pick-up</button> <br>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                        Pick-up
+                      </button>
+                      
                       <hr class="line">
                       <div id="deli">
-                        
+                        <div id="new-bill"></div>
                       </div>
+                      
                       <hr class="line">
                       
-                      <div id="new-bill"></div>
-                    </form>
+                      
+                    
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="confirm" >Confirm</button>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Confirm
+                      </button>
                     </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -379,6 +389,41 @@
       </div>
     </div>
 
+<!--modal delivery-->
+    <div class="modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Your delivery is on the way</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="../assets/images/delivery.png" width="80%" alt="delivery.png">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="understood" >Understood</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--modal pickup-->
+    <div class="modal" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Pick your order in the next 30mins</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="../assets/images/pick.png" width="80%" alt="delivery.png">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="understood" >Understood</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
