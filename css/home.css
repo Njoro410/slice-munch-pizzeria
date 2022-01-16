@@ -9,7 +9,6 @@
     margin-top: -100px;
 
 }
-
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -26,16 +25,13 @@
 }
 .card-title {
     margin-top: -25px;
-    font-size: .9vw;
+    font-size: 1vw;
 }
 .card-text {
-    font-size: .7vw;
+    font-size: .8vw;
 }
 
-.col-sm-4 {
-    box-shadow: 0 0px 10px 0 #5c434d;
-      
-}
+
 .line {
     border-bottom:5px solid #5c434d;
 }
