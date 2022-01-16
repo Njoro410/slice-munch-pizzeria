@@ -90,12 +90,17 @@ $(document).ready(function() {
         ($("#addPizza").click(function() {
             total = total*2;
             $('#total').text('Total:'+total + '/=');
-          }))
+          }));
+
+        ($("#proceed").click(function() {
+            $('#bill').append(total + '/=');
+          }));
         
          $('#siz').append(newPizzaSize.pizzaSize());
          $('#crus').append(newPizzaCrust.pizzaCrust());
          $('#toppin').append(newPizzaTopping.pizzaTopping());
          $('#total').append(total + '/=')
+
 
 
     }
@@ -107,6 +112,23 @@ $(document).ready(function() {
     
 
     });
+    ($("#delivery").click(function() {
+        $("#deli").append('A flat fee of 200/= will be applied'+'<div class="name">' +
+                                 '<div class="form-group">' +
+                                   '<label for="name">Name</label>' +
+                                   '<input type="text" class="form-control">' +
+                                 '</div>' +
+                                 '<div class="form-group">' +
+                                   '<label for="address">Address</label>' +
+                                   '<input type="text" class="form-control">' +
+                                 '</div>' +
+                                 '<div class="form-group">' +
+                                   '<label for="number">Number</label>' +
+                                   '<input type="tel" class="form-control">' +
+                                 '</div>' +
+                               '</div>');
+    }))
+
     
 
 
@@ -167,8 +189,13 @@ $(document).ready(function() {
       }
 
       ($("#add").click(function() {
+        $("#confirm").modal('show');
+      }))
+
+      ($("#proceed").click(function() {
         $("#checkout").modal('show');
       }))
+
 
     
 
