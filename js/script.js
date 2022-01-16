@@ -30,23 +30,13 @@ $(document).ready(function() {
                 total=total + 600;
                 break;
             case 'medium' :
-                    total=total + 900;
+                total=total + 900;
             break;
             case 'large' :
                 total=total + 1200;
              break;
         }
-        switch(inputtedCrust) {
-            case 'crispy':
-                total= total + 100;
-                break;
-            case 'stuffed':
-                total= total + 200;
-                break;
-            case 'gluten-free':
-                    total= total + 300;
-                break;
-        }
+
         if (sel.includes("onions")) {
             total = total + 50;
         }
