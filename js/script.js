@@ -1,12 +1,25 @@
-function Pizza(size,crust,toppings) {
-    this.psize = size;
-    this.pcrust = crust;
-    this.ptoppings = toppings; 
+function Pizzasize(size) {
+    this.pSize = size;
 }
 
-Pizza.prototype.pizzaDetails = function () {
-    return this.psize + this.pcrust + this.ptoppings;
+Pizzasize.prototype.pizzaSize = function () {
+    return this.pSize;
 }
+function Pizzacrust(crust) {
+    this.pCrust = crust;
+}
+
+Pizzacrust.prototype.pizzaCrust = function () {
+    return this.pCrust;
+}
+function Pizzatopping(toppings) {
+    this.pTop = toppings;
+}
+
+Pizzatopping.prototype.pizzaTopping = function () {
+    return this.pTop + ',';
+}
+
 
 
 $(document).ready(function() {
@@ -21,7 +34,9 @@ $(document).ready(function() {
         }).get();
 
 
-        var newPizza = new Pizza(inputtedSize,inputtedCrust,sel);
+        var newPizzaSize = new Pizzasize(inputtedSize);
+        var newPizzaCrust = new Pizzacrust(inputtedCrust);
+        var newPizzaTopping = new Pizzatopping(sel);
 
         function calculateTotal(size,crust,sel) {
         var total = 0;
@@ -72,17 +87,16 @@ $(document).ready(function() {
             total = total + 200;
         }
 
-    //     var toppingTotal = sel.length*100;
-    //     var finTotal = toppingTotal + total;
-    //    alert(finTotal);
-        // alert(sel[0]);
-        alert(newPizza.pizzaDetails());
-         alert(total);
+        
+         $('#siz').append(newPizzaSize.pizzaSize());
+         $('#crus').append(newPizzaCrust.pizzaCrust());
+         $('#toppin').append(newPizzaTopping.pizzaTopping());
+         $('#total').append(total + '/=')
     }
     
     calculateTotal(inputtedSize,inputtedCrust,sel);
-
-
+    
+    
 
     });
     
@@ -91,7 +105,7 @@ $(document).ready(function() {
     if($("#hawaiian").click(function() {
         $("#specs").modal('show');
       })) {
-          //append pizza name
+          $('#name').append('Hawaiian')
       } 
       if($("#boerewors").click(function() {
         $("#specs").modal('show');
@@ -143,6 +157,10 @@ $(document).ready(function() {
       })) {
           //append pizza name
       }
+
+      ($("#add").click(function() {
+        $("#checkout").modal('show');
+      }))
 
     
 
