@@ -299,7 +299,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="close">Close</button>
           <button type="submit" class="btn btn-primary" id="add" data-bs-dismiss="modal" >Add</button>
         </div>
       </form>
@@ -307,8 +307,8 @@
     </div>
     </div>
 
-     <!-- Modal checkout -->
-<div class="modal" id="checkout" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <!-- Modal confirm -->
+<div class="modal" id="confirm" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
@@ -323,13 +323,62 @@
         <div id="total" class="content">Total:</div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary" id="proceed" >Confirm</button>
+        <button type="button" class="btn btn-secondary" id="addPizza">Add Pizza</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="cllose">Close</button>
+        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" id="proceed" >Confirm</button>
       </div>
     </div>
 
   </div>
 </div>
+
+     <!-- Modal checkout -->
+     <div class="modal" id="checkout" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Checkout</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="bill" class="content">Your Total Bill is:</div>
+            <hr class="line">
+
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-12">
+                    <form id="getname">
+                      <p>How do you want to get your pizza:</p>
+                      <button type="button" class="btn btn-primary" id="delivery">Delivery</button>
+                      <button type="button" class="btn btn-primary" id="pick-up">Pick-up</button> <br>
+                      <hr class="line">
+                      <div id="deli">
+                        
+                      </div>
+                      <hr class="line">
+                      
+                      <div id="new-bill"></div>
+                    </form>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="confirm" >Confirm</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            
+
+
+
+          </div>
+          <div class="modal-footer">
+           <img src="../assets/images/logo.png" width="100" alt="logo">
+          </div>
+        </div>
+    
+      </div>
+    </div>
+
 
 
 
