@@ -21,11 +21,11 @@ $(document).ready(function() {
         }).get();
 
 
-       
         var newPizza = new Pizza(inputtedSize,inputtedCrust,sel);
 
+        function calculateTotal(size,crust,sel) {
         var total = 0;
-        switch(inputtedSize) {
+        switch(size) {
             case 'small' :
                 total=total + 600;
                 break;
@@ -36,7 +36,7 @@ $(document).ready(function() {
                 total=total + 1200;
              break;
         }
-        switch(inputtedCrust) {
+        switch(crust) {
             case 'crispy':
                 total= total + 100;
                 break;
@@ -78,24 +78,74 @@ $(document).ready(function() {
         // alert(sel[0]);
         alert(newPizza.pizzaDetails());
          alert(total);
-
-
-
-        
-
-       
-
-
+    }
+    
+    calculateTotal(inputtedSize,inputtedCrust,sel);
 
 
 
     });
-  
+    
 
 
-    $("#hawaiian").click(function() {
+    if($("#hawaiian").click(function() {
         $("#specs").modal('show');
-      })
+      })) {
+          //append pizza name
+      } 
+      if($("#boerewors").click(function() {
+        $("#specs").modal('show');
+      })) {
+          //append pizza name
+      }
+      if($("#bbqsteak").click(function() {
+        $("#specs").modal('show');
+      })) {
+          //append pizza name
+      }
+      if($("#regina").click(function() {
+        $("#specs").modal('show');
+      })) {
+          //append pizza name
+      }
+      if($("#ppchicken").click(function() {
+        $("#specs").modal('show');
+      })) {
+          //append pizza name
+      }
+      if($("#ppchicken").click(function() {
+        $("#specs").modal('show');
+      })) {
+          //append pizza name
+      }
+      if($("#ppchicken").click(function() {
+        $("#specs").modal('show');
+      })) {
+          //append pizza name
+      }
+      if($("#meat_deluxe").click(function() {
+        $("#specs").modal('show');
+      })) {
+          //append pizza name
+      }
+      if($("#veg").click(function() {
+        $("#specs").modal('show');
+      })) {
+          //append pizza name
+      }
+      if($("#c_hawaiian").click(function() {
+        $("#specs").modal('show');
+      })) {
+          //append pizza name
+      }
+      if($("#spicy_boerewors").click(function() {
+        $("#specs").modal('show');
+      })) {
+          //append pizza name
+      }
+
+    
+
 
 
 
