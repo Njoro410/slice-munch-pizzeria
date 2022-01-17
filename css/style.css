@@ -105,4 +105,8 @@ body {
     #main-section {
         margin-top: 150px;
     }
+	    #des {
+        display: none;
+    }
+}
 }
