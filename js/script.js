@@ -35,7 +35,7 @@ $(window).on('load', function() {
 $(document).ready(function() {
 
   $('#continue').click(function() {
-    window.location.href = "/public/home.html";
+    window.location.href = "../public/home.html";
   });
   $('#understood').click(function() {
     location.reload();
